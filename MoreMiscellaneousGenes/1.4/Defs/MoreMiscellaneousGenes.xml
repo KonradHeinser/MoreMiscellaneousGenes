@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <GeneDef>
+    <defName>MBSG_Hairless</defName>
+    <label>hairless</label>
+    <labelShortAdj>hairless</labelShortAdj>
+    <description>Carriers of this gene don't grow hair anywhere on their body. Where their hairs normally would have been are special pores that allow the carrier to regulate temperature better in warm climates.</description>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <displayCategory>Miscellaneous</displayCategory>
+    <displayOrderInCategory>400</displayOrderInCategory>
+    <iconPath>MBSG/Gene_Hairless</iconPath>
+    <iconColor>(0.75, 0.75, 0.75)</iconColor>
+    <hairTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>Bald</li>
+      </tags>
+    </hairTagFilter>
+    <beardTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>Beard_NoBeardOnly</li>
+      </tags>
+    </beardTagFilter>
+    <exclusionTags>
+      <li>HairStyle</li>
+      <li>Fur</li>
+      <li>BeardStyle</li>
+    </exclusionTags>
+    <statOffsets>
+      <ComfyTemperatureMax>+10</ComfyTemperatureMax>
+    </statOffsets>
+    <missingGeneRomanceChanceFactor>0.2</missingGeneRomanceChanceFactor>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>MBSG_Unmovable</defName>
+    <label>unmoveable</label>
+    <description>Carriers of this gene are slowed down by damage half as much as usual.</description>
+    <iconPath>UI/Icons/Genes/Gene_Unstoppable</iconPath>
+    <displayCategory>Miscellaneous</displayCategory>
+    <displayOrderInCategory>549.9</displayOrderInCategory>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <statFactors>
+      <StaggerDurationFactor>0.5</StaggerDurationFactor>
+    </statFactors>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>MBSG_Movable</defName>
+    <label>moveable</label>
+    <description>Carriers of this gene are slowed down by damage one and a half as much as usual.</description>
+    <iconPath>MBSG/Gene_Stoppable</iconPath>
+    <displayCategory>Miscellaneous</displayCategory>
+    <displayOrderInCategory>549.8</displayOrderInCategory>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>1</biostatMet>
+    <statFactors>
+      <StaggerDurationFactor>1.5</StaggerDurationFactor>
+    </statFactors>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>MBSG_Stoppable</defName>
+    <label>stoppable</label>
+    <description>Carriers of this gene are slowed down by damage twice as much as usual.</description>
+    <iconPath>MBSG/Gene_Stoppable</iconPath>
+    <displayCategory>Miscellaneous</displayCategory>
+    <displayOrderInCategory>549.7</displayOrderInCategory>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>2</biostatMet>
+    <statFactors>
+      <StaggerDurationFactor>2</StaggerDurationFactor>
+    </statFactors>
+  </GeneDef>
+</Defs>

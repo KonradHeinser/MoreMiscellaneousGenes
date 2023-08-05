@@ -33,13 +33,12 @@
     </statOffsets>
     <missingGeneRomanceChanceFactor>0.2</missingGeneRomanceChanceFactor>
   </GeneDef>
-
-  <GeneDef>
+  
+  <GeneDef ParentName="MBSG_StoppableGenesBase">
     <defName>MBSG_Unmovable</defName>
     <label>unmoveable</label>
     <description>Carriers of this gene are slowed down by damage half as much as usual.</description>
     <iconPath>UI/Icons/Genes/Gene_Unstoppable</iconPath>
-    <displayCategory>Miscellaneous</displayCategory>
     <displayOrderInCategory>549.9</displayOrderInCategory>
     <biostatCpx>1</biostatCpx>
     <biostatMet>-1</biostatMet>
@@ -48,7 +47,7 @@
     </statFactors>
   </GeneDef>
 
-  <GeneDef>
+  <GeneDef ParentName="MBSG_StoppableGenesBase">
     <defName>MBSG_Movable</defName>
     <label>moveable</label>
     <description>Carriers of this gene are slowed down by damage one and a half as much as usual.</description>
@@ -62,7 +61,7 @@
     </statFactors>
   </GeneDef>
 
-  <GeneDef>
+  <GeneDef ParentName="MBSG_StoppableGenesBase">
     <defName>MBSG_Stoppable</defName>
     <label>stoppable</label>
     <description>Carriers of this gene are slowed down by damage twice as much as usual.</description>

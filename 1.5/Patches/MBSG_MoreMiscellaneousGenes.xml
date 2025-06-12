@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs</xpath>
+        <value>
+            <GeneDef Abstract="True" Name="MBSG_StoppableGenesBase">
+                <displayCategory>Miscellaneous</displayCategory>
+                <exclusionTags>
+                    <li>Stoppable</li>
+                </exclusionTags>
+            </GeneDef>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAttributeSet">
+        <xpath>Defs/GeneDef[defName="Unstoppable"]</xpath>
+        <attribute>ParentName</attribute>
+        <value>MBSG_StoppableGenesBase</value>
+    </Operation>
+</Patch>

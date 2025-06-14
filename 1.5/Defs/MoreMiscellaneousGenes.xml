@@ -33,6 +33,13 @@
     </statOffsets>
     <missingGeneRomanceChanceFactor>0.2</missingGeneRomanceChanceFactor>
   </GeneDef>
+
+  <GeneDef Abstract="True" Name="MBSG_StoppableGenesBase">
+      <displayCategory>Miscellaneous</displayCategory>
+      <exclusionTags>
+          <li>Stoppable</li>
+      </exclusionTags>
+  </GeneDef>
   
   <GeneDef ParentName="MBSG_StoppableGenesBase">
     <defName>MBSG_Unmovable</defName>

@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-    <Operation Class="PatchOperationAttributeSet">
-        <xpath>Defs/GeneDef[defName="Unstoppable"]</xpath>
-        <attribute>ParentName</attribute>
-        <value>MBSG_StoppableGenesBase</value>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/GeneDef[defName="Unstoppable"]/exclusionTags</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/GeneDef[defName="Unstoppable"]/exclusionTags</xpath>
+            <value>
+                <li>Stoppable</li>
+            </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/GeneDef[defName="Unstoppable"]</xpath>
+            <value>
+                <exclusionTags>
+                    <li>Stoppable</li>
+                </exclusionTags>
+            </value>
+        </nomatch>
     </Operation>
 </Patch>
